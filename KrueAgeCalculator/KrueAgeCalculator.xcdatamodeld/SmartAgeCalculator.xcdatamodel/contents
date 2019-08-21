@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14492.1" systemVersion="18G87" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Birthdays" representedClassName="Birthdays" syncable="YES" codeGenerationType="class">
+        <attribute name="dob" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Historys" representedClassName="Historys" syncable="YES" codeGenerationType="class">
+        <attribute name="bday" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Birthdays" positionX="215.3046875" positionY="12.80078125" width="188.91015625" height="73"/>
+        <element name="Historys" positionX="23.71875" positionY="13.53125" width="175.3515625" height="58"/>
+    </elements>
+</model>

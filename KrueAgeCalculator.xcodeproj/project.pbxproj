@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		188B68B422F2E0F800388040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B68B322F2E0F800388040 /* AppDelegate.swift */; };
+		188B68B622F2E0F800388040 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B68B522F2E0F800388040 /* ViewController.swift */; };
+		188B68B922F2E0F800388040 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188B68B722F2E0F800388040 /* Main.storyboard */; };
+		188B68BC22F2E0F800388040 /* KrueAgeCalculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 188B68BA22F2E0F800388040 /* KrueAgeCalculator.xcdatamodeld */; };
+		188B68BE22F2E0FC00388040 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 188B68BD22F2E0FC00388040 /* Assets.xcassets */; };
+		188B68C122F2E0FC00388040 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188B68BF22F2E0FC00388040 /* LaunchScreen.storyboard */; };
+		188B68C922F2E13500388040 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B68C822F2E13500388040 /* Helper.swift */; };
+		188B68CB22F2F40400388040 /* FindYourAgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B68CA22F2F40400388040 /* FindYourAgeViewController.swift */; };
+		188B68CD22F2F42600388040 /* SaveBirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B68CC22F2F42600388040 /* SaveBirthdayViewController.swift */; };
+		188B68CF22F2F43300388040 /* AddBirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B68CE22F2F43300388040 /* AddBirthdayViewController.swift */; };
+		188B68D122F2F4B200388040 /* AboutAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B68D022F2F4B200388040 /* AboutAppViewController.swift */; };
+		9451043F2301921E00B6944F /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9451043E2301921E00B6944F /* HistoryViewController.swift */; };
+		94779FF422FDAE3D0040BA40 /* MenuTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94779FF322FDAE3C0040BA40 /* MenuTableView.swift */; };
+		94BBCDD82300611C00FC3792 /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BBCDD72300611C00FC3792 /* SideMenuTableViewController.swift */; };
+		AA7EE61C55A646AB0666C1A7 /* Pods_KrueAgeCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B1FF83DD2669ED30E0B2A4 /* Pods_KrueAgeCalculator.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		188B68B022F2E0F800388040 /* KrueAgeCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KrueAgeCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		188B68B322F2E0F800388040 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		188B68B522F2E0F800388040 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		188B68B822F2E0F800388040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		188B68BB22F2E0F800388040 /* SmartAgeCalculator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartAgeCalculator.xcdatamodel; sourceTree = "<group>"; };
+		188B68BD22F2E0FC00388040 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		188B68C022F2E0FC00388040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		188B68C222F2E0FC00388040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		188B68C822F2E13500388040 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		188B68CA22F2F40400388040 /* FindYourAgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindYourAgeViewController.swift; sourceTree = "<group>"; };
+		188B68CC22F2F42600388040 /* SaveBirthdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveBirthdayViewController.swift; sourceTree = "<group>"; };
+		188B68CE22F2F43300388040 /* AddBirthdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBirthdayViewController.swift; sourceTree = "<group>"; };
+		188B68D022F2F4B200388040 /* AboutAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppViewController.swift; sourceTree = "<group>"; };
+		42B1FF83DD2669ED30E0B2A4 /* Pods_KrueAgeCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KrueAgeCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9451043E2301921E00B6944F /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		94779FF322FDAE3C0040BA40 /* MenuTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableView.swift; sourceTree = "<group>"; };
+		94BBCDD72300611C00FC3792 /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
+		94E0E700DCD9992873EF28A8 /* Pods-KrueAgeCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KrueAgeCalculator.debug.xcconfig"; path = "Target Support Files/Pods-KrueAgeCalculator/Pods-KrueAgeCalculator.debug.xcconfig"; sourceTree = "<group>"; };
+		B6F3B4BE4E8CEE1C79A1961C /* Pods-KrueAgeCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KrueAgeCalculator.release.xcconfig"; path = "Target Support Files/Pods-KrueAgeCalculator/Pods-KrueAgeCalculator.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		188B68AD22F2E0F800388040 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA7EE61C55A646AB0666C1A7 /* Pods_KrueAgeCalculator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		073FE403A29FC5E7E4C21071 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42B1FF83DD2669ED30E0B2A4 /* Pods_KrueAgeCalculator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		188B68A722F2E0F800388040 = {
+			isa = PBXGroup;
+			children = (
+				188B68B222F2E0F800388040 /* KrueAgeCalculator */,
+				188B68B122F2E0F800388040 /* Products */,
+				D7F08903CBD05BE29AD08146 /* Pods */,
+				073FE403A29FC5E7E4C21071 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		188B68B122F2E0F800388040 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				188B68B022F2E0F800388040 /* KrueAgeCalculator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		188B68B222F2E0F800388040 /* KrueAgeCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				188B68B322F2E0F800388040 /* AppDelegate.swift */,
+				188B68B522F2E0F800388040 /* ViewController.swift */,
+				94779FF322FDAE3C0040BA40 /* MenuTableView.swift */,
+				94BBCDD72300611C00FC3792 /* SideMenuTableViewController.swift */,
+				188B68CA22F2F40400388040 /* FindYourAgeViewController.swift */,
+				188B68CC22F2F42600388040 /* SaveBirthdayViewController.swift */,
+				9451043E2301921E00B6944F /* HistoryViewController.swift */,
+				188B68CE22F2F43300388040 /* AddBirthdayViewController.swift */,
+				188B68D022F2F4B200388040 /* AboutAppViewController.swift */,
+				188B68C822F2E13500388040 /* Helper.swift */,
+				188B68B722F2E0F800388040 /* Main.storyboard */,
+				188B68BD22F2E0FC00388040 /* Assets.xcassets */,
+				188B68BF22F2E0FC00388040 /* LaunchScreen.storyboard */,
+				188B68C222F2E0FC00388040 /* Info.plist */,
+				188B68BA22F2E0F800388040 /* KrueAgeCalculator.xcdatamodeld */,
+			);
+			path = KrueAgeCalculator;
+			sourceTree = "<group>";
+		};
+		D7F08903CBD05BE29AD08146 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94E0E700DCD9992873EF28A8 /* Pods-KrueAgeCalculator.debug.xcconfig */,
+				B6F3B4BE4E8CEE1C79A1961C /* Pods-KrueAgeCalculator.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		188B68AF22F2E0F800388040 /* KrueAgeCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 188B68C522F2E0FC00388040 /* Build configuration list for PBXNativeTarget "KrueAgeCalculator" */;
+			buildPhases = (
+				EEE62CEFB702A56EA630850B /* [CP] Check Pods Manifest.lock */,
+				188B68AC22F2E0F800388040 /* Sources */,
+				188B68AD22F2E0F800388040 /* Frameworks */,
+				188B68AE22F2E0F800388040 /* Resources */,
+				EEAC2825929D3E7B14B6572A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KrueAgeCalculator;
+			productName = SmartAgeCalculator;
+			productReference = 188B68B022F2E0F800388040 /* KrueAgeCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		188B68A822F2E0F800388040 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "AlienBrainz Softwares Pvt. Ltd";
+				TargetAttributes = {
+					188B68AF22F2E0F800388040 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 188B68AB22F2E0F800388040 /* Build configuration list for PBXProject "KrueAgeCalculator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 188B68A722F2E0F800388040;
+			productRefGroup = 188B68B122F2E0F800388040 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				188B68AF22F2E0F800388040 /* KrueAgeCalculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		188B68AE22F2E0F800388040 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				188B68C122F2E0FC00388040 /* LaunchScreen.storyboard in Resources */,
+				188B68BE22F2E0FC00388040 /* Assets.xcassets in Resources */,
+				188B68B922F2E0F800388040 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EEAC2825929D3E7B14B6572A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KrueAgeCalculator/Pods-KrueAgeCalculator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KrueAgeCalculator/Pods-KrueAgeCalculator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KrueAgeCalculator/Pods-KrueAgeCalculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEE62CEFB702A56EA630850B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KrueAgeCalculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		188B68AC22F2E0F800388040 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				188B68B622F2E0F800388040 /* ViewController.swift in Sources */,
+				188B68B422F2E0F800388040 /* AppDelegate.swift in Sources */,
+				188B68D122F2F4B200388040 /* AboutAppViewController.swift in Sources */,
+				188B68CF22F2F43300388040 /* AddBirthdayViewController.swift in Sources */,
+				94779FF422FDAE3D0040BA40 /* MenuTableView.swift in Sources */,
+				9451043F2301921E00B6944F /* HistoryViewController.swift in Sources */,
+				188B68BC22F2E0F800388040 /* KrueAgeCalculator.xcdatamodeld in Sources */,
+				188B68C922F2E13500388040 /* Helper.swift in Sources */,
+				188B68CD22F2F42600388040 /* SaveBirthdayViewController.swift in Sources */,
+				188B68CB22F2F40400388040 /* FindYourAgeViewController.swift in Sources */,
+				94BBCDD82300611C00FC3792 /* SideMenuTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		188B68B722F2E0F800388040 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				188B68B822F2E0F800388040 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		188B68BF22F2E0FC00388040 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				188B68C022F2E0FC00388040 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		188B68C322F2E0FC00388040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		188B68C422F2E0FC00388040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		188B68C622F2E0FC00388040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94E0E700DCD9992873EF28A8 /* Pods-KrueAgeCalculator.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SF8KX2KJ3M;
+				INFOPLIST_FILE = "$(SRCROOT)/KrueAgeCalculator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.KrickFire.KrueAgeCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		188B68C722F2E0FC00388040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6F3B4BE4E8CEE1C79A1961C /* Pods-KrueAgeCalculator.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SF8KX2KJ3M;
+				INFOPLIST_FILE = "$(SRCROOT)/KrueAgeCalculator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.KrickFire.KrueAgeCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		188B68AB22F2E0F800388040 /* Build configuration list for PBXProject "KrueAgeCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				188B68C322F2E0FC00388040 /* Debug */,
+				188B68C422F2E0FC00388040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		188B68C522F2E0FC00388040 /* Build configuration list for PBXNativeTarget "KrueAgeCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				188B68C622F2E0FC00388040 /* Debug */,
+				188B68C722F2E0FC00388040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		188B68BA22F2E0F800388040 /* KrueAgeCalculator.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				188B68BB22F2E0F800388040 /* SmartAgeCalculator.xcdatamodel */,
+			);
+			currentVersion = 188B68BB22F2E0F800388040 /* SmartAgeCalculator.xcdatamodel */;
+			path = KrueAgeCalculator.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 188B68A822F2E0F800388040 /* Project object */;
+}

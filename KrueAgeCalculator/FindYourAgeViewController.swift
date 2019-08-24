@@ -34,6 +34,8 @@ class FindYourAgeViewController: UIViewController {
         UserDefaults.standard.set(false, forKey: "isFromHistory")
          print("Load viewDidLoad")
         self.showDatePicker()
+
+        EEDetailVC.test(from: self)
     }
     
     override func viewWillAppear(_ animated: Bool) {

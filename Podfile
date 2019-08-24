@@ -7,5 +7,5 @@ target 'KrueAgeCalculator' do
 
   # Pods for KrueAgeCalculator
 	pod 'SideMenu', '~> 5.0'
-
+  pod 'AFNetworking'
 end

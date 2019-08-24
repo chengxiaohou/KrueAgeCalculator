@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EEDetailVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webSuperView" destination="OSm-67-MFC" id="lg3-qb-tGR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rZ1-7g-rK5">
+                    <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                    <subviews>
+                        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KG1-RW-st0">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <items>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="wIP-uG-o6O"/>
+                                <barButtonItem image="toolbar_goback_normal" id="v0y-ng-qQJ">
+                                    <connections>
+                                        <action selector="back:" destination="-1" id="hXO-kN-bAS"/>
+                                    </connections>
+                                </barButtonItem>
+                                <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="IvP-Vl-wC3"/>
+                                <barButtonItem image="menu_refresh_normal" id="gm0-Rf-W5f">
+                                    <connections>
+                                        <action selector="onRefresh:" destination="-1" id="qdK-o1-1Ju"/>
+                                    </connections>
+                                </barButtonItem>
+                                <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="bRF-jD-iN7"/>
+                                <barButtonItem image="toolbar_goforward_normal" id="6ey-SS-vr1">
+                                    <connections>
+                                        <action selector="forward:" destination="-1" id="BaU-D8-ZHd"/>
+                                    </connections>
+                                </barButtonItem>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="ytI-vG-TaG"/>
+                            </items>
+                        </toolbar>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="3zY-BM-n4a"/>
+                        <constraint firstItem="KG1-RW-st0" firstAttribute="top" secondItem="rZ1-7g-rK5" secondAttribute="top" id="UqG-Rh-Nt7"/>
+                        <constraint firstItem="KG1-RW-st0" firstAttribute="leading" secondItem="rZ1-7g-rK5" secondAttribute="leading" id="j3R-e6-get"/>
+                        <constraint firstAttribute="bottom" secondItem="KG1-RW-st0" secondAttribute="bottom" id="pKj-bS-j9d"/>
+                        <constraint firstAttribute="trailing" secondItem="KG1-RW-st0" secondAttribute="trailing" id="r1W-sM-PhW"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OSm-67-MFC">
+                    <rect key="frame" x="0.0" y="44" width="414" height="774"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="rZ1-7g-rK5" secondAttribute="bottom" id="9UH-sG-6fg"/>
+                <constraint firstItem="OSm-67-MFC" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="AlE-uM-aF5"/>
+                <constraint firstItem="rZ1-7g-rK5" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="gEp-LC-acv"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="rZ1-7g-rK5" secondAttribute="trailing" id="vG4-47-Opv"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="OSm-67-MFC" secondAttribute="trailing" id="xHf-cf-BPf"/>
+                <constraint firstItem="rZ1-7g-rK5" firstAttribute="top" secondItem="OSm-67-MFC" secondAttribute="bottom" id="z90-pa-Ls4"/>
+                <constraint firstItem="OSm-67-MFC" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="zDV-zc-8Le"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="menu_refresh_normal" width="22" height="22"/>
+        <image name="toolbar_goback_normal" width="30" height="30"/>
+        <image name="toolbar_goforward_normal" width="30" height="30"/>
+    </resources>
+</document>

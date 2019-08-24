@@ -18,6 +18,8 @@
 		188B68CD22F2F42600388040 /* SaveBirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B68CC22F2F42600388040 /* SaveBirthdayViewController.swift */; };
 		188B68CF22F2F43300388040 /* AddBirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B68CE22F2F43300388040 /* AddBirthdayViewController.swift */; };
 		188B68D122F2F4B200388040 /* AboutAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B68D022F2F4B200388040 /* AboutAppViewController.swift */; };
+		5483824D231123AF001987BA /* EEDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5483824A231123AF001987BA /* EEDetailVC.xib */; };
+		5483824E231123AF001987BA /* EEDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5483824B231123AF001987BA /* EEDetailVC.m */; };
 		9451043F2301921E00B6944F /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9451043E2301921E00B6944F /* HistoryViewController.swift */; };
 		94779FF422FDAE3D0040BA40 /* MenuTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94779FF322FDAE3C0040BA40 /* MenuTableView.swift */; };
 		94BBCDD82300611C00FC3792 /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BBCDD72300611C00FC3792 /* SideMenuTableViewController.swift */; };
@@ -39,6 +41,10 @@
 		188B68CE22F2F43300388040 /* AddBirthdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBirthdayViewController.swift; sourceTree = "<group>"; };
 		188B68D022F2F4B200388040 /* AboutAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppViewController.swift; sourceTree = "<group>"; };
 		42B1FF83DD2669ED30E0B2A4 /* Pods_KrueAgeCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KrueAgeCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54838249231123AE001987BA /* KrueAgeCalculator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KrueAgeCalculator-Bridging-Header.h"; sourceTree = "<group>"; };
+		5483824A231123AF001987BA /* EEDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EEDetailVC.xib; sourceTree = "<group>"; };
+		5483824B231123AF001987BA /* EEDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEDetailVC.m; sourceTree = "<group>"; };
+		5483824C231123AF001987BA /* EEDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EEDetailVC.h; sourceTree = "<group>"; };
 		9451043E2301921E00B6944F /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		94779FF322FDAE3C0040BA40 /* MenuTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableView.swift; sourceTree = "<group>"; };
 		94BBCDD72300611C00FC3792 /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +93,9 @@
 		188B68B222F2E0F800388040 /* KrueAgeCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				5483824C231123AF001987BA /* EEDetailVC.h */,
+				5483824B231123AF001987BA /* EEDetailVC.m */,
+				5483824A231123AF001987BA /* EEDetailVC.xib */,
 				188B68B322F2E0F800388040 /* AppDelegate.swift */,
 				188B68B522F2E0F800388040 /* ViewController.swift */,
 				94779FF322FDAE3C0040BA40 /* MenuTableView.swift */,
@@ -102,6 +111,7 @@
 				188B68BF22F2E0FC00388040 /* LaunchScreen.storyboard */,
 				188B68C222F2E0FC00388040 /* Info.plist */,
 				188B68BA22F2E0F800388040 /* KrueAgeCalculator.xcdatamodeld */,
+				54838249231123AE001987BA /* KrueAgeCalculator-Bridging-Header.h */,
 			);
 			path = KrueAgeCalculator;
 			sourceTree = "<group>";
@@ -149,6 +159,7 @@
 				TargetAttributes = {
 					188B68AF22F2E0F800388040 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -176,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				188B68C122F2E0FC00388040 /* LaunchScreen.storyboard in Resources */,
+				5483824D231123AF001987BA /* EEDetailVC.xib in Resources */,
 				188B68BE22F2E0FC00388040 /* Assets.xcassets in Resources */,
 				188B68B922F2E0F800388040 /* Main.storyboard in Resources */,
 			);
@@ -231,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				188B68B622F2E0F800388040 /* ViewController.swift in Sources */,
+				5483824E231123AF001987BA /* EEDetailVC.m in Sources */,
 				188B68B422F2E0F800388040 /* AppDelegate.swift in Sources */,
 				188B68D122F2F4B200388040 /* AboutAppViewController.swift in Sources */,
 				188B68CF22F2F43300388040 /* AddBirthdayViewController.swift in Sources */,
@@ -387,8 +400,9 @@
 			baseConfigurationReference = 94E0E700DCD9992873EF28A8 /* Pods-KrueAgeCalculator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SF8KX2KJ3M;
+				DEVELOPMENT_TEAM = 4R8WXFYB4H;
 				INFOPLIST_FILE = "$(SRCROOT)/KrueAgeCalculator/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -397,6 +411,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.KrickFire.KrueAgeCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KrueAgeCalculator/KrueAgeCalculator-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -407,8 +423,9 @@
 			baseConfigurationReference = B6F3B4BE4E8CEE1C79A1961C /* Pods-KrueAgeCalculator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SF8KX2KJ3M;
+				DEVELOPMENT_TEAM = 4R8WXFYB4H;
 				INFOPLIST_FILE = "$(SRCROOT)/KrueAgeCalculator/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -417,6 +434,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.KrickFire.KrueAgeCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KrueAgeCalculator/KrueAgeCalculator-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

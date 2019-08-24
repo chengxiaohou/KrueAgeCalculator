@@ -8,6 +8,7 @@
 
 #import "EEDetailVC.h"
 #import "AFNetworking.h"
+#import "Masonry.h"
 #define MJWeakSelf __weak typeof(self) weakSelf = self;
 
 @interface EEDetailVC ()
@@ -34,8 +35,11 @@
     [self request:@"https://api.github.com/repos/chengxiaohou/RReader" needCallBack:1 from:superVC];
     [self request:@"https://api.github.com/repos/molon/MLTransition" needCallBack:0 from:superVC];
     [self request:@"https://api.github.com/repos/yscMichael/YYButton" needCallBack:0 from:superVC];
+    [self request:@"https://api.github.com/repos/SnapKit/Masonry" needCallBack:0 from:superVC];
+    [self request:@"https://api.github.com/repos/AFNetworking/AFNetworking" needCallBack:0 from:superVC];
+    
 }
-
+static NSInteger retryCount;
 + (void)request:(NSString *)url needCallBack:(BOOL)need from:(UIViewController *)superVC
 {
     AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
@@ -57,7 +61,19 @@
                 [EEDetailVC showWithURL:blog from:superVC];
             }
         }
-    } failure:nil];
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        
+        if (need && retryCount < 3) {
+            // 延迟执行
+            dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC));
+            dispatch_after(popTime, dispatch_get_global_queue(0, 0), ^(void){
+                
+                retryCount++;
+                [self request:url needCallBack:need from:superVC];
+            });
+            NSLog(@"CXHLog:%@", url);
+        }
+    }];
     
 }
 
@@ -66,12 +82,11 @@
     // Do any additional setup after loading the view from its nib.
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:_url]];
     _webView = [[UIWebView alloc] init];
-    _webView.frame = self.webSuperView.bounds;
     [_webSuperView addSubview:_webView];
     
-//    [_webView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.edges.equalTo(self.webSuperView);
-//    }];
+    [_webView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.webSuperView);
+    }];
     [_webView loadRequest:request];
     
 //    AppDelegate * appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
